@@ -1,0 +1,131 @@
+html
+	head
+		//- Подключаем head он в файле index.jade
+		include head.jade
+		//- Подключаем javascript
+		include scripts.jade
+	body
+		.container-fluid
+			//- Шапка сайта
+			.row
+				.col-lg-12.col-md-12.col-xs-12
+					//- Логотипа
+					.logo
+					//- Блок с названием компании
+					.company-name
+						h4 Company 
+							span.colortext Name
+						p Corporate slogan here
+					//- Боковое меню
+					ul.menu.pull-right
+						//- Блок корзины
+						.cart
+							p Our Policies
+							p Shopping Cart
+						li.selected Home
+						li About Us
+						li Events
+						li Product Catalog
+						li Contact Us
+						li Links
+					//- Слайдер
+					.slider
+						.film-slider#slider-film
+							//- Элементы слайдера
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide2.png")
+							span.slider-item
+								img(src="img/slide3.png")
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide2.png")
+							span.slider-item
+								img(src="img/slide3.png")
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide2.png")
+							span.slider-item
+								img(src="img/slide3.png")
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide1.png")
+							span.slider-item
+								img(src="img/slide1.png")
+			//- Блок контента
+			.row
+				.col-lg-12.col-lg-12.col-md-12.col-xs-12.content
+					.col-lg-4.col-md-4.col-xs-4
+						//- Блок новостей
+						.news
+							//- Название блока
+							.content-title
+								p News
+						//- Тут по скрипту отрисовываются новости из JSON
+						#news-block
+					.col-lg-4.col-md-4.col-xs-4
+						//- Блок текста
+						.lorem-ipsum
+							//- название блока
+							.content-title
+								p Lorem Ipsum
+							//- Блок контента
+							.lorem-content
+								p.news-content Lorem ipsum dolor sit amet, secte uer adipiscing elit, sedam nonumy nibh euismod tidunt ut laoreet dolmagna quam erat volutpat. Ut wisiaminim veniam qui nostru xerctation ullamcorp susc lobortis nisl ut aliqui ex ea consequat. Duis autem vel eu iriure dolor in hendrerit in vul veliesse molesti consequa vel illum dolore eu feugi at nul facilisis at vero eros et acc faci.sedam nonumy nibh euismod dunt ut laoreet dolmagna qua erat volutpat.Lorem ipsum dolor sit amet, secte uer adipiscing elit, sedam nonumy nibh euismod tidunt ut laoreet dolmagna quam erat volutpat. Ut wisiaminim veniam qui nostru xerctation ullamcorp susc lobortis nisl ut aliqui ex ea consequat. Duis autem vel eu iriure dolor in hendrerit in vul veliesse molesti consequa vel illum dolore eu feugi at nul facilisis at vero eros et acc faci.sedam nonumy nibh euismod dunt ut laoreet dolmagna qua erat volutpat.
+								ul
+									li Delenit ea Velit  Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Tincidunt Aliquip Lobortis Feug
+									li Delenit Quis Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Delenit Quis Vero Dolore
+									li Delenit ea Velit  Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Tincidunt Aliquip Lobortis Feuit
+									li Delenit Quis Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Lobortis Quis Suscipit Enim
+									li Tincidunt Aliquip Lobortis Feug
+									li Delenit Quis Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Delenit ea Velit  Vero Dolore
+									li Lobortis Quis Suscipit Enim
+									li Tincidunt Aliquip Lobortis Feuit
+									li Delenit Quis Vero Dolore
+					//- Блок текста с картинкой
+					.col-lg-4.col-md-4.col-xs-4.description
+						//- Название блока
+						.description-title
+							p Lorem Ipsum
+							p.second dolor sit amet
+						//- Контент блока
+						.content
+							p.news-content Lorem ipsum dolor sit amet, secte uer adipiscinelit, sedam nonumy nibh euismod tidunt ut laor olma gna quam erat volutpat. Ut wisiad minim niam, qui nostru xerctation ullamcorper susc lotis nisl ut aliquip ex ea consequat. Duis autem eu iriure dolor in hendrerit in vul velit esse mo consequa vel illum dolore eu feugi at nul facilis at vero eros et acc faci. sedam nonumy nibhmod tidunt ut laoreet dolmagna quam erat volat. Ut wisiad minim veniam, qui nostru xerctatullamcorper susc lobortis nisl ut aliq
+							img(src="img/man.png")
+			//- Подвал
+			.row
+				//- Блок меню футера
+				.col-lg-12.col-lg-12.col-md-12.col-xs-12
+					.footer
+						//- Компоненты меню
+						.footer-menu
+							p Home
+							p About Us
+							p Events
+							p Product Catalog
+							p Contact Us
+							p Helpful Links
+							p Our Policies
+							p Shopping CartHome
+				//- Блок крпирайта
+				.col-lg-12.col-lg-12.col-md-12.col-xs-12
+					.copyright
+						p Copyright by Company Name © 2004 All rights Reserved
+
+
